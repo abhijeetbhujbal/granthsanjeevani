@@ -1,0 +1,120 @@
+/*-----------------------------------------------
+|   Reboot
+-----------------------------------------------*/
+::placeholder {
+  opacity: 1;
+  color: $gray-500;
+}
+
+html {
+  padding:0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  // overflow-x: hidden;
+}
+
+
+pre,
+code {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+section {
+  position: relative;
+  padding-top: map_get($spacers, 6);
+  padding-bottom: map_get($spacers, 6);
+
+  @include media-breakpoint-up(lg) {
+    padding-top: map_get($spacers, 8);
+    padding-bottom: map_get($spacers, 8);
+  }
+}
+
+//setting up font family for bootstrap components
+input,
+button,
+select,
+optgroup,
+textarea,
+label,
+.alert,
+.badge,
+.blockquote-footer,
+.btn,
+.navbar,
+.pagination,
+.valid-feedback,
+.invalid-feedback {
+  font-family: $font-family-sans-serif;
+}
+
+
+pre {
+  margin: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+
+label {
+  margin-bottom: map-get($spacers, 2);
+}
+
+pre,
+//-code,
+kbd,
+samp {
+  font-size: $font-size-sm;
+}
+
+code{
+  font-size: 87.5%;
+}
+
+ol,
+ul {
+  padding-left: 2.5rem;
+}
+
+thead, tbody, tfoot, tr, td, th {
+  padding: 5px !important;
+ }
+
+ .checkbox-btn {
+  position: relative;
+  }
+  .checkbox-btn input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+  .checkbox-btn input:checked ~ .btn {
+  border-color: #3167eb;
+  background-color: #3167eb;
+  color: #fff;
+  }
+  .btn-lang {
+  display: inline-block;
+  font-weight: 600;
+  color: #343a40;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #eee;
+  border: 1px solid #eee;
+  padding: 0.45rem 0.85rem;
+  font-size: 10px;
+  line-height: 1.5;
+  border-radius: 0.37rem;
+  }
+  .btn-lang:hover {
+  background-color: #fff;
+  border-color: #989898;
+  }
